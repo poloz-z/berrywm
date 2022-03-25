@@ -1,0 +1,67 @@
+# GNU-GPL3
+
+;PoloZ-Z
+;POLYBAR...BAR...BAR..VAR?
+;ella es fanatica de los sexual ella quiere una foto mia...
+
+[global/wm]
+; Global WM settings 
+margin-bottom = 0
+margin-top = 0
+
+;===============================
+;Include an external files.
+include-file = ~/.config/polybar/system
+include-file = ~/.config/polybar/modules.ini
+
+;;;;;;;;;;;;;END:GLOBAL/WM;;;;;;;;;;;;;;
+
+[bar/main]
+; Bar settings
+override-redirect = false
+bottom = false
+fixed-center = true
+
+; Dimension defined
+width = 98%
+height = 40
+offset-x = 1%
+offset-y = 1%
+
+; Colors 
+background = #000000
+foreground = #FFFFFF
+
+radius = 20.0
+
+padding = 2
+
+module-margin-left = 1
+module-margin-right = 1
+
+; Fonts
+font-0 = "Sans Mono:size=10;4"
+font-1 = "FuraCode Nerd Font:size=14;4"
+font-2 = "FiraCode Nerd Font:size=22;5"
+font-3 = "FuraCode Nerd Font:size=12;4"
+font-4 = "FuraCode:style=bold:size=12;4"
+font-5 = "FuraCode Nerd Font:size=17;2"
+;Modules z-z
+modules-left = distro  berrywm
+;modules-center = title
+modules-right = cmus alsa ethernet date powermenu
+
+dim-value = 1.0}
+
+;;;;;;;;;;;;;;;;END:BAR/MAIN;;;;;;;;;;;;;;;;;;;;
+
+[settings]
+; Compositing settings
+compositing-background = source
+compositing-foreground = over
+compositing-overline = over 
+compositing-underline = over 
+compositing-border = over 
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
